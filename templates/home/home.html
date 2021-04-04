@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+HOME
+{% endblock %}
+
+{% block nav %}
+
+{% include 'nav/nav.html' %}
+{% endblock %}
+
+
+{% block content %}
+<div class="row mt-5">
+    {% for i in opciones %}
+    <div class="col-sm-6">
+        <a href="#" class="card-body"  >
+            <div class="card p-5 text-center border-secondary">
+                <h5>{{i}}</h5>
+            </div>
+           
+           
+        </a>
+        
+    </div>
+    {% endfor %}
+    
+    
+</div>
+{% endblock %}
